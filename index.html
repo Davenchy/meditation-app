@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Meditation App</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <div class="video-container">
+        <video loop>
+          <source src="./video/rain.mp4" />
+        </video>
+      </div>
+
+      <div class="left-section">
+        <button data-duration="120">2 Minutes</button>
+        <button data-duration="300">5 Minutes</button>
+        <button data-duration="600">10 Minutes</button>
+        <button data-duration="custom">Custom</button>
+      </div>
+
+      <div class="player">
+        <audio loop>
+          <source src="./sounds/rain.mp3" />
+        </audio>
+        <audio id="bell">
+          <source src="./sounds/bell.mp3" />
+        </audio>
+        <h2 class="title">Mutation App</h2>
+        <img class="playing-btn" src="./svg/play.svg">
+        <svg width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+        </svg>
+        <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+        </svg>
+        <h3 class="timerDisplay">Loading...</h3>
+      </div>
+
+      <div class="right-section">
+        <button title="settings" class="settings-btn">
+          <img src="./svg/settings.svg">
+        </button>
+        <button data-theme="rain" title="raining theme">
+          <img src="./svg/rain.svg">
+        </button>
+        <button data-theme="beach" title="beach theme">
+          <img src="./svg/beach.svg">
+        </button>
+        <button data-theme="meditation" title="meditation theme">
+          <img src="./svg/meditation.svg">
+        </button>
+        <button data-theme="space" title="space theme">
+          <img src="./svg/space.svg">
+        </button>
+        <button data-theme="sun-set" title="sun-set theme">
+          <img src="./svg/sun-set.svg">
+        </button>
+      </div>
+
+      <div class="settings">
+        <img src="./svg/close.svg" class="close settings-btn">
+        <div class="container">
+          <h2>Settings</h2>
+          <br>
+          <p style="padding-left: 30px;" class="audioSettings">
+            Audio Volume (<span id="audio">0</span>):
+            <button data-audio="0">Mute</button>
+            <button data-audio="25">25</button>
+            <button data-audio="50">50</button>
+            <button data-audio="75">75</button>
+            <button data-audio="100">100</button>
+          </p>
+          <p style="padding-left: 30px;" class="videoSettings">
+            Video :
+            <button data-video="true">Enable</button>
+            <button data-video="false">Disable</button>
+          </p>
+          <p style="padding-left: 30px;">
+            <button class="reset">Reset All</button>
+          </p>
+          <p style="padding-left: 30px;">
+            <h3>Copyrights:</h3>
+            <br>
+            <p>Created by Davenchy [@fadi_davenchy]</p>
+            <p>freesound.org</p>
+            <p>pexels.com</p>
+            <p>flaticon.com</p>
+            <p>Wagner Lima from Pexels</p>
+            <p>INNORECORDS from Pexels</p>
+            <p>Oleg Magni from Pexels</p>
+            <p>Vimeo from Pexels</p>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
